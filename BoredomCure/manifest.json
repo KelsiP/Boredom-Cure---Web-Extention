@@ -1,0 +1,13 @@
+{
+    "name": "Boredom Cure",
+    "description": "Quit being bored.",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com/ga.js https://example.cc; object-src 'self'",
+    "icons": {"128": "icon_128.png"},
+    "browser_action" : {
+        "default_icon": "iconpng.png",
+        "default_popup": "bc.html"
+    },
+    "permissions": ["activeTab"]
+}

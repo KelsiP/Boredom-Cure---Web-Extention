@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        html, body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 30px;
+            margin: 4;
+            min-height: 180px;
+            padding: 6;
+            width: 384px;
+            color: orange
+        }
+        h1 {
+            font-family: 'Menlo', monospace; 
+            font-size: 50px;
+            font-weight: 400px;
+            margin:0;
+            color: royalblue
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Cure your boredom</h1>
+    </div>
+    <div>
+        <h4>Click the button to generate a random link that will end your boredom</h4>
+    </div>
+</body>
+
+
+<script src="jvbc.js"></script>
+
+<form>
+<input type="button" value="random link!" onClick="randomlinks()">
+</form>
+
+</html>
+<script type="text/javascript">
+    function randomlinks(){
+                var myrandom=Math.round(Math.random()*14)
+                var links=new Array()
+                links[0]="https://www.mapcrunch.com/"
+                links[1]="http://www.news.com"
+                links[2]="https://www.enchambered.com/puzzles/"
+                links[3]="https://freerice.com/"
+                links[4]="https://whattoeat.info/"
+                links[5]="https://www.geoguessr.com/"
+                links[6]="https://10minutemail.com/"
+                links[7]="https://www.youtube.com/"
+                links[8]="https://www.internetlivestats.com/"
+                links[9]="https://agar.io/"
+                links[10]="https://www.space.com/"
+                links[11]="https://www.reddit.com/"
+                links[12]="https://www.eatthismuch.com/"
+                links[13]="https://www.jigsawplanet.com/"
+                links[14]="https://spaceplace.nasa.gov/menu/play/"
+            
+             
+                window.location=links[myrandom]
+    }
+    
+    
+</script>
